@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: polechkagadukina <polechkagadukina@stud    +#+  +:+       +#+        */
+/*   By: rrhyhorn <rrhyhorn@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/22 14:43:48 by wvenita           #+#    #+#             */
-/*   Updated: 2022/03/28 19:13:52 by polechkagad      ###   ########.fr       */
+/*   Updated: 2022/07/02 20:04:25 by rrhyhorn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <string.h>
+
+# define BUFFER_SIZE 100
 
 typedef struct		s_steps
 {
@@ -89,5 +92,11 @@ void	push_a(t_stacks *s, int i);
 void	push_b(t_stacks *s, int i);
 
 int		*intarrcpy(int *dst, const int *src, int count);
+char	*get_next_line(int fd);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strjoin(char const *s1, char const *s2);
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+char	*ft_strdup(const char *s1);
+size_t	ft_strlen(const char *c);
 
 #endif
